@@ -9,5 +9,10 @@ GET     /count                      controllers.CountController.count
 # An example controller showing how to write asynchronous code
 GET     /message                    controllers.AsyncController.message
 
+## CSRF examples
+GET     /form/addtoken              controllers.FormController.addtoken
+GET     /form/notoken               controllers.FormController.notoken
+POST    /form/check                 controllers.FormController.check
+
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
